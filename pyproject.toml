@@ -1,0 +1,17 @@
+[project]
+name = "randomization-python-list"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "arijit83sarkar", email = "mail2arijit83@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+randomization-python-list = "randomization_python_list:main"
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
