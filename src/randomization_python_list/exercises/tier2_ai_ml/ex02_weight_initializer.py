@@ -14,7 +14,7 @@ import random
 
 
 def init_weights(
-    rows: int, cols: int, low: float = -0.5, high: float = 0.5
+        rows: int, cols: int, low: float = -0.5, high: float = 0.5
 ) -> list[list[float]]:
     # TODO: build a rows x cols nested list of random floats between low and high
     # raise NotImplementedError("init_weights is not implemented yet")

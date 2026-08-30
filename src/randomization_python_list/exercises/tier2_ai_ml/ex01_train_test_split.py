@@ -22,9 +22,9 @@ def train_test_split(dataset: list[list], test_ratio: float = 0.2) -> tuple[list
     random.shuffle(shuffled)
     split_ratio = int(len(shuffled) * (1 - test_ratio))
     print(">> split ratio: ", split_ratio)
-    train = shuffled[:split_ratio]  # -> omit start -> "from the beginning"
-    test = shuffled[split_ratio:]  # -> omit stop  -> "to the end"
-    return (train, test)
+    train_data = shuffled[:split_ratio]  # -> omit start -> "from the beginning"
+    test_data = shuffled[split_ratio:]  # -> omit stop  -> "to the end"
+    return train_data, test_data
 
 
 if __name__ == "__main__":
