@@ -18,7 +18,6 @@ import random
 
 
 def fisher_yates_shuffle(items: list) -> None:
-    # TODO: implement the algorithm above, mutating `items` in place
     for i in range(len(items) - 1, 0, -1):
         j = random.randint(0, i)
         items[i], items[j] = items[j], items[i]
